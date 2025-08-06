@@ -1,10 +1,15 @@
 import booksData from "../../data/bookData.json";
 
+interface Footnote {
+  text: string;
+  reference: string;
+}
+
 interface Book {
   id: number;
   title: string;
   content: string[];
-  footnotes?: string[];
+  footnotes?: Footnote[];
 }
 
 interface Props {

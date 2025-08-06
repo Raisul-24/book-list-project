@@ -4,10 +4,16 @@ const Modal1 = () => {
    return (
       <div>
          <button className="btn btn-ghost my-2 text-sky-500 text-xl"
-            onClick={() => document.getElementById('my_modal_4').showModal()}
+            onClick={() => {
+               const modal = document.getElementById('my_modal_4') as HTMLDialogElement | null;
+               if (modal) {
+                 modal.showModal();
+               }
+             }}
+             
          >أبو حنيفة النعمان (ت ١٥٠)</button>
          <dialog id="my_modal_4" className="modal">
-            <div className="modal-box md:w-2/3 bg-black text-right text-lg md:text-xl pl-12 pr-4">
+            <div className="modal-box md:w-2/3 bg-black text-right text-sm md:text-xl md:pl-12 md:pr-4">
                <div>
                   <h1 className="text-2xl md:text-4xl font-extrabold text-center text-sky-500 mb-10">عن المؤلف</h1>
                   <h3 className="font-extrabold text-lg md:text-xl"> أبو حنيفة النعمان (ت ١٥٠)</h3>

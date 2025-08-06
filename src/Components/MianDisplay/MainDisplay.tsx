@@ -61,11 +61,11 @@ const MainDisplay = () => {
       <div className="w-full pl-1 md:w-2/3 space-y-10 overflow-y-scroll max-h-screen" style={{ direction: "rtl" }}>
         <div style={{ direction: "ltr", textAlign: "right" }}>
           {(booksData as Book[]).map((book) => (
-            <div
-              key={book.id}
-              ref={(el) => (bookRefs.current[book.id] = el)}
-              className="ml-1"
-            >
+            <div key={book.id}
+              ref={(el) => {
+                bookRefs.current[book.id] = el;
+              }}
+              className="ml-1">
               <h2 className="text-xl md:text-2xl font-bold border m-1 rounded-sm border-white p-5 md:p-8 text-sky-400">
                 {book.title}
               </h2>
@@ -76,7 +76,7 @@ const MainDisplay = () => {
                   </p>
                 ))}
               </div>
-              {book.footnotes?.length > 0 && (
+              {Array.isArray(book.footnotes) && book.footnotes.length > 0 && (
                 <div className="border m-1 rounded-sm p-5 md:p-8 pl-5 md:pl-28 lg:pl-42 text-sm text-gray-600 space-y-2">
                   <h3 className="font-semibold mb-2">الهوامش:</h3>
                   <ul className="list-disc list-inside space-y-1">

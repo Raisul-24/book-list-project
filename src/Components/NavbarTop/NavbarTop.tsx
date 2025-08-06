@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { BsDashLg } from "react-icons/bs";
 import Modal1 from "./Modal1";
@@ -6,7 +5,7 @@ import Modal2 from "./Modal2";
 import { TiArrowRightThick } from "react-icons/ti";
 
 const NavbarTop = () => {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null); // ✅ fixed type
 
   useEffect(() => {
     const el = scrollRef.current;
