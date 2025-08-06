@@ -1,0 +1,18 @@
+export interface Footnote {
+  id: string;
+  paragraphIndex: number;
+  text: string;
+}
+
+export interface Chapter {
+  id: string;
+  title: string;
+  content: string[];
+  footnotes: Footnote[];
+}
+
+export interface BookData {
+  title: string;
+  author: string;
+  chapters: Chapter[];
+}
