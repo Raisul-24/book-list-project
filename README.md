@@ -1,7 +1,7 @@
 Got it! Here's a more concise, clean version of your README with a **live site** section added and unnecessary words trimmed:
 
 ````markdown
-# 📚 Book Reader UI – Responsive Vite + TypeScript
+# Book Reader(📚) UI – Responsive Vite + TypeScript
 
 A responsive frontend built with **Vite**, **React**, and **TypeScript** simulating an interactive book reader.
 
@@ -10,9 +10,7 @@ A responsive frontend built with **Vite**, **React**, and **TypeScript** simulat
 - Modal popups  
 - Fully responsive with Tailwind CSS  
 
----
-
-## 🚀 Features
+# Features 🚀
 
 - React + TypeScript  
 - Fast dev with Vite  
@@ -20,9 +18,7 @@ A responsive frontend built with **Vite**, **React**, and **TypeScript** simulat
 - Auto scroll on load  
 - Mobile drawer toggle  
 
----
-
-## 🛠️ Tech Stack
+# Tech Stack 🛠️
 
 - [Vite](https://vitejs.dev/)  
 - [React](https://react.dev/)  
@@ -30,16 +26,15 @@ A responsive frontend built with **Vite**, **React**, and **TypeScript** simulat
 - [Tailwind CSS](https://tailwindcss.com/)  
 - React Icons  
 
----
 
-## 📦 Setup
+# Setup 📦
 
 ### Clone
 
 ```bash
 git clone https://github.com/Raisul-24/book-list-project.git
 cd book-list-project
-````
+```
 
 ### Install
 
@@ -59,7 +54,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 🌐 Live Demo
 
-[https://your-live-site-url.com](https://your-live-site-url.com)
+[https://author-book-list.netlify.app/](https://author-book-list.netlify.app/)
 
 ---
 
