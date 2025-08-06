@@ -34,7 +34,7 @@ A responsive frontend built with **Vite**, **React**, and **TypeScript** simulat
 ```bash
 git clone https://github.com/Raisul-24/book-list-project.git
 cd book-list-project
-```
+````
 
 ### Install
 
