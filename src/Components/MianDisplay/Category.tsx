@@ -1,4 +1,3 @@
-import { useState } from "react";
 import booksData from "../../data/bookData.json";
 
 interface Book {
@@ -19,12 +18,6 @@ const Category = ({
   setShowCategories,
   setSelectedBookId,
 }: Props) => {
-  const [selectedId, setSelectedId] = useState<number | null>(null);
-
-  const handleToggleCategoryPanel = () => {
-    setShowCategories(!showCategories);
-    setSelectedId(null);
-  };
 
   const handleSelectBook = (book: Book) => {
     setSelectedBookId(book.id); 

@@ -1,5 +1,4 @@
 // MainDisplay.tsx
-"use client";
 import { useEffect, useRef, useState } from "react";
 import booksData from "../../data/bookData.json";
 import Category from "./Category";
@@ -27,7 +26,6 @@ interface Book {
 type TabType = "recent" | "star" | "search" | "category" | null;
 
 const MainDisplay = () => {
-  const [isDrawerOpen, setIsDrawerOpen] = useState();
   const [activeTab, setActiveTab] = useState<TabType>("category");
   const [selectedBookId, setSelectedBookId] = useState<number | null>(null);
 
