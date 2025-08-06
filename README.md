@@ -1,69 +1,98 @@
-# React + TypeScript + Vite
+Got it! Here's a more concise, clean version of your README with a **live site** section added and unnecessary words trimmed:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+````markdown
+# 📚 Book Reader UI – Responsive Vite + TypeScript
 
-Currently, two official plugins are available:
+A responsive frontend built with **Vite**, **React**, and **TypeScript** simulating an interactive book reader.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Horizontal scroll for large screens  
+- Slider drawer for mobile  
+- Modal popups  
+- Fully responsive with Tailwind CSS  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Features
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React + TypeScript  
+- Fast dev with Vite  
+- Tailwind CSS styling  
+- Auto scroll on load  
+- Mobile drawer toggle  
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
+
+- [Vite](https://vitejs.dev/)  
+- [React](https://react.dev/)  
+- [TypeScript](https://www.typescriptlang.org/)  
+- [Tailwind CSS](https://tailwindcss.com/)  
+- React Icons  
+
+---
+
+## 📦 Setup
+
+### Clone
+
+```bash
+git clone https://github.com/Raisul-24/book-list-project.git
+cd book-list-project
+````
+
+### Install
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Run Locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm run dev
+```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+---
+
+## 🌐 Live Demo
+
+[https://your-live-site-url.com](https://your-live-site-url.com)
+
+---
+
+## 📁 Structure
+
+```
+├── public/
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── Layout
+│   ├── main.tsx
+│   └── ...
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 🙌 Contributions
+
+Fork, branch, and PRs welcome.
+
+```
+
+Just replace `https://author-book-list.netlify.app/` with your actual deployed site URL. Want me to generate that too?
 ```
